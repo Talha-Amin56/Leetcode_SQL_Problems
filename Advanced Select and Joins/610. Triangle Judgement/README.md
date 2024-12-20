@@ -1,19 +1,49 @@
-# Triangle SQL Query
+# Triangle Table and Query Task
 
-This query determines whether the given line segments can form a triangle based on the triangle inequality theorem. The result table includes a column `triangle` with values "Yes" or "No" for each set of line segments.
+## Problem Description
 
-## Table Schema
+You are given a table named `Triangle` with the following structure:
 
-**Table Name**: `Triangle`
+| Column Name | Type |
+|-------------|------|
+| x           | int  |
+| y           | int  |
+| z           | int  |
 
-| Column Name | Type | Description                  |
-|-------------|------|------------------------------|
-| `x`         | int  | Length of the first segment  |
-| `y`         | int  | Length of the second segment |
-| `z`         | int  | Length of the third segment  |
+- `(x, y, z)` is the primary key for this table.
+- Each row in the table contains three integers representing the lengths of three line segments.
 
-- `(x, y, z)` is the primary key.
+The task is to determine for each row whether the three line segments can form a triangle. A triangle can be formed if the following conditions are met:
+- The sum of any two sides is greater than the third side.
 
-## Example Input
+The output should include all rows from the `Triangle` table with an additional column `triangle` indicating:
+- `Yes` if the line segments can form a triangle.
+- `No` otherwise.
 
-**Triangle Table**:
+## Example
+
+### Input
+
+Triangle table:
+
+| x  | y  | z  |
+|----|----|----|
+| 13 | 15 | 30 |
+| 10 | 20 | 15 |
+
+### Output
+
+| x  | y  | z  | triangle |
+|----|----|----|----------|
+| 13 | 15 | 30 | No       |
+| 10 | 20 | 15 | Yes      |
+
+## Instructions
+
+Write an SQL query that processes the `Triangle` table to generate the required output table. 
+
+## Notes
+
+- Return the result table in any order.
+- Ensure that the query is efficient and adheres to SQL best practices.
+
