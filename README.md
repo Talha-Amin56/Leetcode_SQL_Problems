@@ -31,6 +31,7 @@ This section provides problems related to joining multiple tables using differen
 - `SELF JOIN` to join a table with itself (useful for hierarchical data)
 - `CROSS JOIN` to return the Cartesian product of two tables
 
+
 ### 3. **Aggregation**
 
 In this section, you will learn how to aggregate data to generate summarized reports:
