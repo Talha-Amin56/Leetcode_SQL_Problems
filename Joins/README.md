@@ -6,6 +6,7 @@ SQL Joins are used to combine records from two or more tables based on a related
 
 This repository provides examples and explanations for both **basic** and **advanced** SQL joins, illustrating their usage and key differences.
 
+
 ## Types of SQL Joins
 
 ### 1. **Basic Joins**
